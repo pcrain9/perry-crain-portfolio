@@ -1,0 +1,83 @@
+/*certain stylings adapted from:
+https://codinhood.com/micro/10-dropdown-menu-animations-css-transform
+https://www.w3schools.com/howto/howto_css_dropdown.asp */
+
+.header_container {
+  width: 75%;
+  margin:auto;
+  display: flex;
+  height:50px;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background-color:lightgrey;
+}
+
+.nav_item {
+  margin-top:15px;
+  color: grey;
+  padding: 2px;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+  font-family: 'Manrope', sans-serif;
+}
+.nav_item:hover {
+  color:black;
+}
+
+.dropbtn {
+  margin-top: 15px;
+  background-color: transparent;
+  text-decoration: none;
+  color: grey;
+  cursor: pointer;
+}
+
+.dropdown {
+  margin-top:15px;
+  padding: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdowncontent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  animation: growdown 1s ease forwards;
+  transform-origin: top center;
+  text-decoration: none;
+  color:lightslategray;
+}
+
+@keyframes growdown {
+  0% {
+    transform: rotateX(-90deg);
+  }
+  70% {
+    transform: rotateX(20deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+.link {
+  display: block;
+  padding: 1.5px 2px;
+  text-decoration: none;
+  color: lightslategray;
+}
+.link:hover {
+  color: black;
+}
+
+.dropdown:hover .dropdowncontent {
+  display: block;
+  background-color: white;
+}
+
+
+

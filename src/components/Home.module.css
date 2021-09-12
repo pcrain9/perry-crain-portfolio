@@ -1,0 +1,21 @@
+.home_container{
+    background-color: gray;
+    width:75%;
+    margin:auto;
+}
+.home_page_text{
+    position:absolute;
+    z-index: 500;
+    margin-top: 40px;
+    text-align:center;
+    margin-left:270px;
+    color:lightgray;
+}
+
+.home_page_image{
+    height:500px;
+    width:700px;
+    padding-left:30px;
+    position:relative;
+    z-index:400;
+}

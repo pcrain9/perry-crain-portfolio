@@ -1,0 +1,18 @@
+.banner_container{
+    background-color: gray;
+    color:white;
+    width:75%;
+    height:80px;
+    margin:auto;
+    font-family:'Manrope', sans-serif;
+}
+
+.banner_title{
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+}               
+.banner_words{
+    margin-top:0px;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+}
