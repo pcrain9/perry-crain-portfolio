@@ -1,43 +1,55 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { CssBaseline } from "@mui/material";
+import { Typography } from "@mui/material";
+import { AppBar } from "@mui/material";
+import { Link } from "@mui/material";
+import { Menu } from "@mui/material";
+import { MenuItem } from "@mui/material";
+import ToolBar from "@mui/material/Toolbar";
 
 import classes from "./Header.module.css";
 
 function Header() {
   return (
-    <nav className={classes.header_container}>
+    <AppBar position="relative">
+      <ToolBar> 
       <NavLink className={classes.nav_item} to="/">
         Home
       </NavLink>
-      {/* <NavLink to="/services" className={classes.nav_item}>
-        Services
-      </NavLink> */}
       <NavLink to="/portfolio" className={classes.nav_item}>
         Portfolio
       </NavLink>
-      <div className={classes.dropdown}>
+      
         <NavLink to="/about" className={classes.nav_item}>
           About
         </NavLink>
-        <div className={classes.dropdowncontent}>
-          <NavLink to="/about" className={classes.link}>
-            about
-          </NavLink>
-          <a href="http://espn.com" className={classes.link}>
-            resume(link to google docs)
-          </a>
-          <a href="https://github.com/pcrain9" className={classes.link}>
-            github
-          </a>
-        </div>
-      </div>
-      <a
-        className={classes.nav_item}
-        href="mailto:pcrain9@gmail.com"
-      >
+        <Menu className={classes.dropdowncontent}>
+          <MenuItem>
+            <NavLink to="/about" className={classes.link}>
+              about
+            </NavLink>
+          </MenuItem>
+          <MenuItem>
+            <Link
+              href="https://drive.google.com/file/d/1QeEB7l3W1PkH7rD4P_b5yCDnXslZVBaT/view?usp=sharing"
+              variant="body2"
+            >
+              resume(link to google docs)
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link href="https://github.com/pcrain9" variant="body2">
+              github
+            </Link>
+          </MenuItem>
+        </Menu>
+        </ToolBar>
+      <Link href="mailto:pcrain9@gmail.com">
         Contact
-      </a>
-    </nav>
+      </Link>
+      
+    </AppBar>
   );
 }
 

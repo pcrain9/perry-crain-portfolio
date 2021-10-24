@@ -1,13 +1,14 @@
 import React from 'react';
-
-import classes from './TopBanner.module.css';
+import Typography from '@mui/material/Typography';
+import { CssBaseline } from '@mui/material';
 
 function TopBanner() {
     return (
-        <div className={classes.banner_container}>
-            <h2 className={classes.banner_title}>Perry Crain</h2>
-            <h5 className={classes.banner_words}>Front-end Web Developer</h5>
-        </div>
+        <>
+            <CssBaseline />
+            <Typography variant='h2'>Perry Crain</Typography>
+            <Typography variant='h5'>Front-end Web Developer</Typography>
+        </>
     )
 }
 
