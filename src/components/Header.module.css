@@ -14,11 +14,11 @@ https://www.w3schools.com/howto/howto_css_dropdown.asp */
 
 .nav_item {
   margin-top:15px;
-  color: grey;
+  color: #ffffff;
   padding: 2px;
   text-decoration: none;
   transition: all 0.2s ease-in;
-  font-family: 'Manrope', sans-serif;
+  text-transform: uppercase;
 }
 .nav_item:hover {
   color:black;
@@ -68,7 +68,7 @@ https://www.w3schools.com/howto/howto_css_dropdown.asp */
   display: block;
   padding: 1.5px 2px;
   text-decoration: none;
-  color: lightslategray;
+  color: gray;
 }
 .link:hover {
   color: black;

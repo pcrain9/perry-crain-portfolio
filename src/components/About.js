@@ -1,7 +1,6 @@
 import React from 'react'
-import { NavLink } from "react-router-dom";
-import { Typography } from '@mui/material';
-import { Link } from '@mui/material';
+import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
 
 import classes from './About.module.css';
 
